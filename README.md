@@ -9,6 +9,7 @@ Made with [<3](https://twitter.com/arrowgunz)
 [http://mohni.sh/fliptext.js/](http://mohni.sh/fliptext.js/)
 
 ### Installation
+
 `<script src='fliptext.js'></script>`
 
 ### Example
