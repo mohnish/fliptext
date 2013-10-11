@@ -4,6 +4,9 @@ A simple JavaScript component to flip text.
 
 Made with [<3](https://twitter.com/arrowgunz)
 
+### Installation
+`<script src='fliptext.js'></script>`
+
 ### Example
 
 ```
