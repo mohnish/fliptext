@@ -12,6 +12,10 @@ Made with [<3](https://twitter.com/arrowgunz)
 
 `<script src='fliptext.js'></script>`
 
+### Bookmarklet
+
+Find the bookmarklet on the [Demo](http://mohni.sh/fliptext.js/) page.
+
 ### Example
 
 ```
