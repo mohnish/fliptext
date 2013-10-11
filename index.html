@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <form autocomplete="off">
+      <div>
+        <label for="input">
+          Enter text
+        </label>
+
+        <input type="text" name="input" />
+      </div>
+
+      <div>
+        <label for="with-emoji">
+          With emoji
+        </label>
+        <input type="checkbox" name="with-emoji" />
+      </div>
+
+      <div>
+        <button>Flip!</button>
+      </div>
+    </form>
+
+    <div id="output">
+
+    </div>
+
+  <script src='fliptext.js'></script>
+  <script>
+    document.querySelector('button').addEventListener('click', function(event) {
+      event.preventDefault();
+      document.querySelector('#output').innerHTML = flipText(document.querySelector('input').value, document.querySelector('input[type=checkbox]').checked);
+    });
+  </script>
+  </body>
+</html>
