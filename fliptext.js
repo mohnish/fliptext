@@ -58,12 +58,17 @@
     "\r": "\n"
   };
 
+  var flipperDude = "(╯°□°)╯︵ ";
+
   var flipText = function(input, emoji) {
     emoji = emoji || false;
     var output = "";
     for (var i = input.length - 1; i >= 0; i--) {
       output += flippedCharacterSet[input.charAt(i)] || input.charAt(i);
     };
+
+    if (emoji) output = flipperDude + output;
+
     return output;
   }
 
