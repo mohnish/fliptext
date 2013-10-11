@@ -1,4 +1,4 @@
-(function() {
+;(function() {
   var flippedCharacterSet = {
     a: "\u0250",
     b: "q",
@@ -60,16 +60,24 @@
 
   var flipperDude = "(╯°□°)╯︵ ";
 
-  var flipText = function(input, emoji) {
+  /**
+   * Flip `textToBeFlipped`
+   *
+   * @param  {String} textToBeFlipped Text to be flipped
+   * @param  {Boolean} emoji Add emoji to flipped text
+   * @return {String} flipped text
+   */
+
+  var flipText = function(textToBeFlipped, emoji) {
     emoji = emoji || false;
-    var output = "";
-    for (var i = input.length - 1; i >= 0; i--) {
-      output += flippedCharacterSet[input.charAt(i)] || input.charAt(i);
+    var flippedText = "";
+    for (var i = textToBeFlipped.length - 1; i >= 0; i--) {
+      flippedText += flippedCharacterSet[textToBeFlipped.charAt(i)] || textToBeFlipped.charAt(i);
     };
 
-    if (emoji) output = flipperDude + output;
+    if (emoji) flippedText = flipperDude + flippedText;
 
-    return output;
+    return flippedText;
   }
 
   window.flipText = flipText;
