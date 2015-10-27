@@ -58,8 +58,6 @@
     "\r": "\n"
   };
 
-  var flipperDude = "(╯°□°)╯︵ ";
-
   /**
    * Flip `textToBeFlipped`
    *
@@ -69,8 +67,8 @@
    */
 
   var flipText = function(textToBeFlipped, emoji) {
+    var flipperDude = "(╯°□°)╯︵ ", flippedText = "";
     emoji = emoji || false;
-    var flippedText = "";
     for (var i = textToBeFlipped.length - 1; i >= 0; i--) {
       flippedText += flippedCharacterSet[textToBeFlipped.charAt(i)] || textToBeFlipped.charAt(i);
     };
@@ -81,5 +79,4 @@
   }
 
   window.flipText = flipText;
-
 })();
